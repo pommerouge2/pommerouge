@@ -1,0 +1,138 @@
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mise en forme générale */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* En-tête */
+header {
+    background-color: #d1e238;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Hero (Accueil) */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 60vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 40px;
+}
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+/* Pied de page */
+footer {
+    background-color: #d1e238;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Section d'accueil */
+#accueil {
+    background-image: url('images/hill.jpg'); /* Remplace par l'image souhaitée */
+    background-size: cover; /* Couvre toute la section */
+    background-position: center; /* Centrer l'image */
+    background-attachment: fixed; /* L'image reste fixe lorsque l'utilisateur fait défiler la page */
+    height: 100vh; /* Hauteur de la section en pleine fenêtre */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white; /* Texte en blanc pour le contraste */
+    text-align: center; /* Centrer le texte */
+}
+
+.hero-content {
+    z-index: 2; /* S'assurer que le texte soit au-dessus de l'image */
+    background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour améliorer la lisibilité du texte */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.logo-back {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+
+.noix-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
